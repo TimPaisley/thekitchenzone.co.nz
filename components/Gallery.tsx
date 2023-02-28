@@ -1,5 +1,5 @@
 import Image from "next/image";
-import img from "../public/images/parker3.jpg";
+import pKitchen3 from "../public/images/p-kitchen3.jpg";
 
 export default function Gallery() {
   return (
@@ -17,5 +17,12 @@ export default function Gallery() {
 }
 
 function Img() {
-  return <Image alt="" src={img} className="w-full rounded-md" />;
+  return (
+    <Image
+      alt=""
+      src={pKitchen3}
+      className="w-full rounded-md"
+      placeholder="blur"
+    />
+  );
 }

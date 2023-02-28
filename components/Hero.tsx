@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Button from "./Button";
 import ArrowRight from "./icons/ArrowRight";
-import heroImage from "../public/images/parker3.jpg";
+import heroImage from "../public/images/p-kitchen3.jpg";
 
 export default function Hero() {
   return (
@@ -30,6 +30,7 @@ export default function Hero() {
       <Image
         className="w-full max-w-5xl m-auto rounded-xl shadow-xl"
         alt="A picture of a kitchen"
+        placeholder="blur"
         src={heroImage}
       />
     </section>

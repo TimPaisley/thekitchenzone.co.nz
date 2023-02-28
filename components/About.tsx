@@ -1,4 +1,4 @@
-import heroImage from "../public/images/beckham1.jpg";
+import featureImage from "../public/images/b-kitchen1.jpg";
 import Image from "next/image";
 
 export default function About() {
@@ -10,7 +10,8 @@ export default function About() {
       <Image
         className="w-full rounded-l-xl object-cover"
         alt="A picture of a kitchen"
-        src={heroImage}
+        placeholder="blur"
+        src={featureImage}
       />
 
       <div className="p-8">
