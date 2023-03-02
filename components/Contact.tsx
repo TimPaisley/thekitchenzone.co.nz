@@ -1,34 +1,27 @@
 export default function Contact() {
   return (
-    <section id="contact" className="max-w-5xl m-auto flex space-x-4 pt-16">
-      <div className="flex-1">
+    <section
+      id="contact"
+      className="max-w-5xl m-auto grid grid-cols-1 sm:grid-cols-3 gap-4 pt-16"
+    >
+      <div className="">
         <h2 className="text-xl font-bold mb-4">Get in touch</h2>
         <h3 className="text-gray-700">
           Tell us what you're after and we can tell you how we can help
         </h3>
       </div>
-      <div className="flex-1">
+      <div className="">
         <ContactCard
           name="Ted Paisley"
           email="ted@thekitchenzone.co.nz"
           number="(+64) 027 272 1833"
         />
+      </div>
+      <div className="">
         <ContactCard
           name="David Henderson"
           email="production@thekitchenzone.co.nz"
           number="(+64) 027 123 4567"
-        />
-      </div>
-      <div className="flex-1">
-        <ContactCard
-          name="Alice Badger"
-          email="design@thekitchenzone.co.nz"
-          number="(+64) 027 123 4567"
-        />
-        <ContactCard
-          name="Tim Paisley"
-          email="tim@thekitchenzone.co.nz"
-          number="(+64) 027 557 1462"
         />
       </div>
     </section>
