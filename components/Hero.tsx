@@ -16,8 +16,8 @@ export default function Hero() {
         <h2 className="text-3xl font-semibold">from Tauranga, New Zealand</h2>
 
         <p className="text-xl my-8">
-          Find out how The Kitchen Zone can give you the best solution, tailored
-          to your needs.
+          Over three decades of experience delivering contemporary, timeless
+          kitchens tailored to your needs.
         </p>
 
         <div className="flex justify-center space-x-4">

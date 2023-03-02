@@ -15,8 +15,8 @@ export default function About() {
       />
 
       <div className="p-8">
-        <p className="font-semibold">About</p>
-        <h2 className="text-3xl font-bold mb-4">
+        <p className="font-bold text-red-500">About</p>
+        <h2 className="text-3xl font-semibold mb-4">
           Award winning joinery in a league of its own
         </h2>
         <h3 className="text-gray-700">
@@ -35,11 +35,11 @@ export default function About() {
           />
           <Feature
             title="Unbeatable experience"
-            content="With over 20 years in the joinery industry, we have the skills to meet your expectations."
+            content="With over 30 years in the joinery industry, we have the skills to meet your expectations."
           />
           <Feature
-            title="Contemporary"
-            content="Our dedicated, in-house design team can provide you with a modern design solution."
+            title="Everything sorted"
+            content="We'll organise and manage all the tradies for you, from start to finish."
           />
         </div>
       </div>
