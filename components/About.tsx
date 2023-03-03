@@ -5,10 +5,10 @@ export default function About() {
   return (
     <section
       id="about"
-      className="my-16 max-w-5xl m-auto flex border rounded-xl"
+      className="my-16 max-w-5xl mx-auto flex lg:border lg:rounded-xl"
     >
       <Image
-        className="w-full rounded-l-xl object-cover"
+        className="hidden md:block w-full lg:rounded-l-xl object-cover"
         alt="A picture of a kitchen"
         placeholder="blur"
         src={featureImage}
@@ -24,7 +24,7 @@ export default function About() {
           solution, we can take your dreams from concept to reality.
         </h3>
 
-        <div className="mt-8 grid grid-cols-2 grid-rows-2 gap-8">
+        <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 grid-rows-2 gap-8">
           <Feature
             title="Superior quality"
             content="We are qualified and focused tradespeople, with an eye for detail."
