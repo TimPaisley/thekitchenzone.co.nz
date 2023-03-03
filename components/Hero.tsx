@@ -1,12 +1,18 @@
+import Image from "next/image";
 import Button from "./Button";
 import ArrowRight from "./icons/ArrowRight";
+import heroImage from "../public/images/p-kitchen3.jpg";
 
 export default function Hero() {
   return (
-    <section
-      id="hero"
-      className="relative shadow-xl bg-center bg-cover bg-[url('/images/p-kitchen3.jpg')]"
-    >
+    <section id="hero" className="relative shadow-xl">
+      <Image
+        className="absolute top-0 left-0 w-full h-full object-cover object-center overflow-hidden"
+        alt="A background picture a kitchen designed and installed by The Kitchen Zone"
+        placeholder="blur"
+        src={heroImage}
+      />
+
       <div className="absolute bg-black/75 w-full h-full" />
       <div className="relative py-16 sm:py-28 max-w-3xl m-auto flex flex-col justify-center text-center text-white px-4">
         <h1 className="text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-l from-red-400 to-red-700">

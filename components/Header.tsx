@@ -1,10 +1,9 @@
-import Moon from "./icons/Moon";
 import Star from "./icons/Star";
 
 export default function Header() {
   return (
     <header className="sticky w-full top-0 left-0 p-4 flex justify-between items-center z-50 bg-white shadow-md">
-      <a href="#">
+      <a href="#" aria-label="Return home">
         <Star />
       </a>
 

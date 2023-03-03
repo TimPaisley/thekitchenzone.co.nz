@@ -44,10 +44,10 @@ function ContactCard({
 }: React.PropsWithChildren<ContactCardProps>) {
   return (
     <div className="py-4 flex flex-col items-center">
-      <h4 className="font-bold mb-2 flex items-center">
+      <p className="font-bold mb-2 flex items-center">
         {icon}
         <span className="ml-2">{title}</span>
-      </h4>
+      </p>
       <p>{children}</p>
     </div>
   );

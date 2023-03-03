@@ -7,13 +7,13 @@ export default function About() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:border lg:rounded-xl">
         <Image
           className="hidden md:block w-full h-full lg:rounded-l-xl object-cover"
-          alt="A picture of a kitchen"
+          alt="A picture a kitchen designed and installed by The Kitchen Zone"
           placeholder="blur"
           src={featureImage}
         />
 
         <div className="px-8 lg:py-8">
-          <p className="font-bold text-red-500">About</p>
+          <p className="font-bold text-red-700">About</p>
           <h2 className="text-3xl font-semibold mb-4">
             Award winning joinery in a league of its own
           </h2>

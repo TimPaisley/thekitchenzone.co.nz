@@ -20,7 +20,7 @@ import classNames from "classnames";
 export default function Gallery() {
   return (
     <section id="gallery" className="pt-24 max-w-5xl m-auto">
-      <p className="font-bold text-red-500 text-center">Gallery</p>
+      <p className="font-bold text-red-700 text-center">Gallery</p>
       <h1 className="text-3xl mt-0 my-8 font-semibold text-center">
         See for yourself
       </h1>
