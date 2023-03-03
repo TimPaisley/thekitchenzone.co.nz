@@ -6,7 +6,7 @@ import Star from "./icons/Star";
 export default function Contact() {
   return (
     <section id="contact" className="pt-24 max-w-5xl m-auto">
-      <p className="font-bold text-red-500 text-center">Contact</p>
+      <p className="font-bold text-red-700 text-center">Contact</p>
       <h1 className="text-3xl mt-0 my-8 font-semibold text-center">
         Get in touch
       </h1>
