@@ -25,7 +25,7 @@ export default function Gallery() {
         See for yourself
       </h1>
 
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         <Img src={bKitchen1} sizing="big" />
         <Img src={bKitchen3} sizing="tall" />
         <Img src={bKitchen6} />
@@ -53,10 +53,10 @@ interface ImgProps {
 }
 
 function Img({ src, sizing }: ImgProps) {
-  const tall = "h-[23rem] row-span-2";
-  const long = "h-44 col-span-2";
-  const big = "h-[23rem] row-span-2 col-span-2";
-  const regular = "h-44";
+  const tall = "lg:h-[23rem] md:h-44 lg:row-span-2";
+  const long = "lg:h-44 lg:col-span-2";
+  const big = "lg:h-[23rem] md:h-44 lg:row-span-2 lg:col-span-2";
+  const regular = "md:h-44";
 
   const sizingMap = {
     tall: tall,
@@ -69,7 +69,7 @@ function Img({ src, sizing }: ImgProps) {
       alt=""
       src={src}
       className={classNames(
-        "w-full rounded-md object-cover",
+        "w-full lg:rounded-md object-cover",
         sizing ? sizingMap[sizing] : regular
       )}
       placeholder="blur"
