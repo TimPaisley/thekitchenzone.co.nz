@@ -9,6 +9,20 @@ const config: DefaultSeoProps = {
     locale: "en_NZ",
     url: "https://thekitchenzone.co.nz",
     siteName: "The Kitchen Zone",
+    images: [
+      {
+        url: "https://thekitchenzone.co.nz/og-image1.jpg",
+        width: 1000,
+        height: 600,
+        alt: "A kitchen designed and installed by The Kitchen Zone",
+      },
+      {
+        url: "https://thekitchenzone.co.nz/og-image2.jpg",
+        width: 1000,
+        height: 600,
+        alt: "A kitchen designed and installed by The Kitchen Zone",
+      },
+    ],
   },
 };
 
