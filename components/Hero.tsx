@@ -9,7 +9,7 @@ export default function Hero() {
     >
       <div className="absolute bg-black/75 w-full h-full" />
       <div className="relative py-16 sm:py-28 max-w-3xl m-auto flex flex-col justify-center text-center text-white">
-        <h1 className="text-5xl font-bold mb-4">
+        <h1 className="text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-l from-red-400 to-red-700">
           Kitchens, vanities and furniture
         </h1>
 
