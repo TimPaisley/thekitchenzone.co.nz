@@ -3,10 +3,14 @@ import classnames from "classnames";
 
 interface ButtonProps {
   type?: "primary" | "secondary";
+  href?: string;
+  className?: string;
 }
 
 export default function Button({
   type,
+  className,
+  href,
   children,
 }: React.PropsWithChildren<ButtonProps>) {
   const base = "py-3 px-6 font-semibold flex items-center space-x-2";
@@ -14,10 +18,15 @@ export default function Button({
   const secondary = "";
 
   return (
-    <button
-      className={classnames(base, type === "secondary" ? secondary : primary)}
+    <a
+      href={href || ""}
+      className={classnames(
+        base,
+        type === "secondary" ? secondary : primary,
+        className
+      )}
     >
       {children}
-    </button>
+    </a>
   );
 }
