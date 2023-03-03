@@ -4,9 +4,9 @@ import Image from "next/image";
 export default function About() {
   return (
     <section id="about" className="pt-24 max-w-5xl mx-auto">
-      <div className="flex lg:border lg:rounded-xl">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:border lg:rounded-xl">
         <Image
-          className="hidden md:block w-full lg:rounded-l-xl object-cover"
+          className="hidden md:block w-full h-full lg:rounded-l-xl object-cover"
           alt="A picture of a kitchen"
           placeholder="blur"
           src={featureImage}
