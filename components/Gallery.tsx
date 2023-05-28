@@ -26,38 +26,105 @@ import nKitchen1 from "../public/images/n-kitchen1.jpg";
 import nKitchen2 from "../public/images/n-kitchen2.jpg";
 import nKitchen3 from "../public/images/n-kitchen3.jpg";
 import nKitchen4 from "../public/images/n-kitchen4.jpg";
+import before1 from "../public/images/before1.jpg";
+import after1 from "../public/images/after1.jpg";
+
 import classNames from "classnames";
 
 export default function Gallery() {
   return (
     <section id="gallery" className="pt-24 max-w-5xl m-auto">
       <p className="font-bold text-red-700 text-center">Gallery</p>
-      <h1 className="text-3xl mt-0 my-8 font-semibold text-center">
+      <h1 className="text-3xl mt-0 font-semibold text-center">
         See for yourself
       </h1>
+
+      <h2 className="text-2xl font-semibold mt-8 mb-4 text-center">Kitchens</h2>
 
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         <Img src={nKitchen3} sizing="big" />
         <Img src={nKitchen1} sizing="tall" />
         <Img src={nKitchen4} />
-        <Img src={bLaundry1} />
-        <Img src={bVanity1} sizing="tall" />
         <Img src={lKitchen1} />
         <Img src={lKitchen2} />
         <Img src={nKitchen2} />
         <Img src={uKitchen1} sizing="big" />
         <Img src={pKitchen2} />
         <Img src={pKitchen3} />
+        <Img src={uKitchen6} sizing="big" />
         <Img src={uKitchen2} />
         <Img src={uKitchen4} />
         <Img src={uKitchen7} />
-        <Img src={uKitchen6} sizing="big" />
         <Img src={uKitchen8} />
-        <Img src={uVanity1} />
-        <Img src={uVanity2} sizing="big" />
-        <Img src={uVanity5} sizing="tall" />
+      </div>
+
+      <h2 className="text-2xl font-semibold mt-8 mb-4 text-center">
+        Bathrooms
+      </h2>
+
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <Img src={bVanity1} sizing="tall" />
         <Img src={uVanity3} />
+        <Img src={uVanity1} sizing="tall" />
+        <Img src={uVanity5} sizing="tall" />
         <Img src={uVanity4} />
+      </div>
+
+      <h2 className="text-2xl font-semibold mt-8 mb-4 text-center">
+        Laundries
+      </h2>
+
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <Img src={bLaundry1} sizing="big" />
+      </div>
+
+      <h2 className="text-2xl font-semibold mt-8 mb-4 text-center">
+        Furniture
+      </h2>
+
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <Img src={uVanity2} sizing="big" />
+      </div>
+
+      <h2 className="text-2xl font-semibold mt-8 mb-4 text-center">
+        Before & After
+      </h2>
+
+      <div className="flex md:space-x-4 space-x-2">
+        <Image
+          alt=""
+          src={before1}
+          className={classNames(
+            "w-full lg:h-[23rem] md:h-44 lg:rounded-md object-cover"
+          )}
+          placeholder="blur"
+        />
+
+        <div className="flex justify-center items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={2}
+            stroke="currentColor"
+            className="md:w-6 md:h-6 w-3 h-3"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+            />
+          </svg>
+        </div>
+
+        <Image
+          alt=""
+          src={after1}
+          className={classNames(
+            "w-full lg:h-[23rem] md:h-44 lg:rounded-md object-cover"
+          )}
+          placeholder="blur"
+        />
       </div>
     </section>
   );
